@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="everlit.ico" type="image/x-icon">
     <title>Everlit Aura Care</title>
     <style>
@@ -14,35 +15,36 @@
             font-family: 'Magnolia', Arial, sans-serif;
             background-color: #26ffe6;
             margin: 0;
-            padding: 0;
+            padding: 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             height: 100vh;
         }
-	h1 {
-		margin-bottom: 0px;
-	}
 
-	h3 {
-		padding-bottom: 50px;
-	}
+        h1 {
+            margin-bottom: 0px;
+        }
+
+        h3 {
+            padding-bottom: 50px;
+        }
 
         .logo {
-            width: 200px;
+            width: 150px;
             margin-bottom: 20px;
         }
 
         .everlit-text {
-            font-size: 48px;
+            font-size: 36px;
             font-weight: bold;
             color: #fff;
             margin-top: 0;
         }
         
         .subtext {
-            font-size: 24px;
+            font-size: 18px;
             font-weight: bold;
             color: #fff;
             margin: 10px 0;
@@ -55,7 +57,7 @@
             background-color: #fff;
             padding: 10px 0;
             text-align: center;
-            font-size: 18px;
+            font-size: 14px;
         }
 
         .instagram-button {
@@ -109,13 +111,40 @@
         .book-button {
             background-color: #fff;
             color: #26ffe6;
-            font-size: 18px;
-            padding: 10px 20px;
+            font-size: 16px;
+            padding: 8px 16px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             margin-top: 20px;
             font-weight: bold;
+        }
+
+        @media (min-width: 769px) {
+            body {
+                padding: 0;
+            }
+
+            .logo {
+                width: 200px;
+            }
+
+            .everlit-text {
+                font-size: 48px;
+            }
+
+            h3.subtext {
+                font-size: 24px;
+            }
+
+            footer {
+                font-size: 18px;
+            }
+
+            .book-button {
+                font-size: 18px;
+                padding: 10px 20px;
+            }
         }
     </style>
 </head>
