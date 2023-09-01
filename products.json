@@ -1,0 +1,16 @@
+[
+    {
+        "id": "1",
+        "name": "Aura Cleanser",
+        "description": "Enhance Your Energy with Colour Energy’s High Frequency Electromagnetic Aura Purifier...",
+        "image": "images/aura-cleanser.webp",
+        "category": "Colour Energy"
+    },
+    {
+        "id": "2",
+        "name": "Root Chakra Spray",
+        "description": "The concept behind these high powered Spiritual Sprays...",
+        "image": "images/red-spray.webp",
+        "category": "Colour Energy"
+    },
+]

@@ -1,172 +1,435 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="everlit.ico" type="image/x-icon">
-    <title>Everlit Aura Care</title>
-    <style>
-        @font-face {
-            font-family: 'Magnolia';
-            src: url('Magnolia-Regular.otf') format('opentype');
-        }
-
-        body {
-            background: linear-gradient(to right, #ebe7e8, #26ffe6);
-            font-family: 'Magnolia', Arial, sans-serif;
-            background-color: #26ffe6;
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
-
-        h1 {
-            margin-bottom: 0px;
-        }
-
-        h3 {
-            padding-bottom: 50px;
-        }
-
-        .logo {
-            width: 150px;
-            margin-bottom: 20px;
-        }
-
-        .everlit-text {
-            font-size: 36px;
-            font-weight: bold;
-            color: #fff;
-            margin-top: 0;
-        }
-        
-        .subtext {
-            font-size: 18px;
-            font-weight: bold;
-            color: #fff;
-            margin: 10px 0;
-        }
-
-        footer {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            background-color: #fff;
-            padding: 10px 0;
-            text-align: center;
-            font-size: 14px;
-        }
-
-        .instagram-button {
-            display: inline-flex;
-            align-items: center;
-            text-decoration: none;
-            color: inherit;
-            margin-left: 10px;
-        }
-
-        .instagram-logo {
-            width: 18px;
-            height: 18px;
-            margin-right: 4px;
-        }
-
-        .phone-number {
-            display: inline-flex;
-            align-items: center;
-            color: #333;
-            margin-left: 10px;
-            text-decoration: none;
-        }
-
-        .phone-unicode {
-            margin-right: 4px;
-        }
-        
-        .phone-unicode::before {
-            content: "\260E"; /* Unicode for phone symbol */
-        }
-
-        .phone-unicode:hover {
-            text-decoration: underline;
-        }
-        
-        .email-address {
-            display: inline-flex;
-            align-items: center;
-            color: #333;
-            margin-left: 10px;
-            text-decoration: none;
-        }
-
-        .email-logo {
-            width: 18px;
-            height: 18px;
-            margin-right: 4px;
-        }
-
-        .book-button {
-            background-color: #fff;
-            color: #26ffe6;
-            font-size: 16px;
-            padding: 8px 16px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 20px;
-            font-weight: bold;
-        }
-
-        @media (min-width: 769px) {
-            body {
-                padding: 0;
-            }
-
-            .logo {
-                width: 200px;
-            }
-
-            .everlit-text {
-                font-size: 48px;
-            }
-
-            h3.subtext {
-                font-size: 24px;
-            }
-
-            footer {
-                font-size: 18px;
-            }
-
-            .book-button {
-                font-size: 18px;
-                padding: 10px 20px;
-            }
-        }
-    </style>
-</head>
+<html lang="en">
+<!--#include virtual="components/head.html" -->
 <body>
-    <img class="logo" src="https://i.ibb.co/DpZnVNt/everlit-logo-nobg-closer.png" alt="Everlit Aura Care L">
-    <h1 class="everlit-text">Everlit</h1>
-    <h3 class="subtext">Let there be light...</h3>
-    <a href="https://calendly.com/everlit"><button class="book-button">Book Me</button></a>
+<!--#include virtual="components/navbar.html" -->
 
-    <footer>
-        <a href="https://www.instagram.com/everlitauracare/" class="instagram-button">
-            <img class="instagram-logo" src="https://assets.stickpng.com/images/5ecec78673e4440004f09e77.png" alt="Instagram Logo">
-            @everlitauracare
-        </a>
-        <a href="tel:+19022238069" class="phone-number">
-            <span class="phone-unicode"></span>
-            902-223-8069
-        </a>
-        <a href="mailto:tyawicks@tutmail.com" class="email-address">
-            ✉ tyawicks@tutmail.com
-        </a>
-    </footer>
+  <!-- END nav -->
+
+  <div class="hero-wrap"
+    style="background-image: url('images/biopulsar-reflexograph.jpg'); background-attachment:fixed;">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+        <div class="col-md-8 ftco-animate text-center">
+          <h1 class="mb-4">BioEnergetic Councelling</h1>
+          <p>Wellness of Body,&nbsp;Mind &amp; Spirit</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="ftco-services">
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="col-md-4 ftco-animate py-5 nav-link-wrap">
+          <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link px-4 active" id="v-pills-master-tab" data-toggle="pill" href="#v-pills-master" role="tab"
+              aria-controls="v-pills-master" aria-selected="true"><span class="mr-3 flaticon-cardiogram"></span>
+              Colour Therapy</a>
+
+            <a class="nav-link px-4" id="v-pills-buffet-tab" data-toggle="pill" href="#v-pills-buffet" role="tab"
+              aria-controls="v-pills-buffet" aria-selected="false"><span class="mr-3 flaticon-neurology"></span>
+              Biopulsar Reflexograph</a>
+
+            <a class="nav-link px-4" id="v-pills-fitness-tab" data-toggle="pill" href="#v-pills-fitness" role="tab"
+              aria-controls="v-pills-fitness" aria-selected="false"><span class="mr-3 flaticon-stethoscope"></span>
+              Chromalight</a>
+
+            <a class="nav-link px-4" id="v-pills-reception-tab" data-toggle="pill" href="#v-pills-reception" role="tab"
+              aria-controls="v-pills-reception" aria-selected="false"><span class="mr-3 flaticon-tooth"></span>
+              Healy</a>
+
+            <a class="nav-link px-4" id="v-pills-sea-tab" data-toggle="pill" href="#v-pills-sea" role="tab"
+              aria-controls="v-pills-sea" aria-selected="false"><span class="mr-3 flaticon-vision"></span>
+              Aura</a>
+
+            <a class="nav-link px-4" id="v-pills-spa-tab" data-toggle="pill" href="#v-pills-spa" role="tab"
+              aria-controls="v-pills-spa" aria-selected="false"><span class="mr-3 flaticon-ambulance"></span>
+              Energy</a>
+          </div>
+        </div>
+        <div class="col-md-8 ftco-animate p-4 p-md-5 d-flex align-items-center">
+
+          <div class="tab-content pl-md-5" id="v-pills-tabContent">
+
+            <div class="tab-pane fade show active py-5" id="v-pills-master" role="tabpanel"
+              aria-labelledby="v-pills-master-tab">
+              <span class="icon mb-3 d-block flaticon-cardiogram"></span>
+              <h2 class="mb-4">Colour Therapy</h2>
+              <p>Colour is awesome</p>
+              <p>Hi my name is Tya, let me tell you all about colour!</p>
+              <p><a href="#" class="btn btn-primary">Learn More</a></p>
+            </div>
+
+            <div class="tab-pane fade py-5" id="v-pills-buffet" role="tabpanel" aria-labelledby="v-pills-buffet-tab">
+              <span class="icon mb-3 d-block flaticon-neurology"></span>
+              <h2 class="mb-4">Biopulsar Reflexograph</h2>
+              <p>Biopulsar is the best!&nbsp;</p>
+              <p>I scan your soul ....&nbsp; &nbsp;</p>
+              <p><a href="#" class="btn btn-primary">Learn More</a></p>
+            </div>
+
+            <div class="tab-pane fade py-5" id="v-pills-fitness" role="tabpanel" aria-labelledby="v-pills-fitness-tab">
+              <span class="icon mb-3 d-block flaticon-stethoscope"></span>
+              <h2 class="mb-4">Chromalight</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste
+                dolores consequatur</p>
+              <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto facilis officiis
+                nobis sit quis molestias asperiores rem, blanditiis! Commodi exercitationem vitae deserunt qui nihil ea,
+                tempore et quam natus quaerat doloremque.</p>
+              <p><a href="#" class="btn btn-primary">Learn More</a></p>
+            </div>
+
+            <div class="tab-pane fade py-5" id="v-pills-reception" role="tabpanel"
+              aria-labelledby="v-pills-reception-tab">
+              <span class="icon mb-3 d-block flaticon-tooth"></span>
+              <h2 class="mb-4">Healy</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste
+                dolores consequatur</p>
+              <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto facilis officiis
+                nobis sit quis molestias asperiores rem, blanditiis! Commodi exercitationem vitae deserunt qui nihil ea,
+                tempore et quam natus quaerat doloremque.</p>
+              <p><a href="#" class="btn btn-primary">Learn More</a></p>
+            </div>
+
+            <div class="tab-pane fade py-5" id="v-pills-sea" role="tabpanel" aria-labelledby="v-pills-sea-tab">
+              <span class="icon mb-3 d-block flaticon-vision"></span>
+              <h2 class="mb-4">Aura</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste
+                dolores consequatur</p>
+              <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto facilis officiis
+                nobis sit quis molestias asperiores rem, blanditiis! Commodi exercitationem vitae deserunt qui nihil ea,
+                tempore et quam natus quaerat doloremque.</p>
+              <p><a href="#" class="btn btn-primary">Learn More</a></p>
+            </div>
+
+            <div class="tab-pane fade py-5" id="v-pills-spa" role="tabpanel" aria-labelledby="v-pills-spa-tab">
+              <span class="icon mb-3 d-block flaticon-ambulance"></span>
+              <h2 class="mb-4">Energy</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste
+                dolores consequatur</p>
+              <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto facilis officiis
+                nobis sit quis molestias asperiores rem, blanditiis! Commodi exercitationem vitae deserunt qui nihil ea,
+                tempore et quam natus quaerat doloremque.</p>
+              <p><a href="#" class="btn btn-primary">Learn More</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section">
+    <div class="container">
+      <div class="row justify-content-center mb-5 pb-3">
+        <div class="col-md-7 heading-section ftco-animate text-center">
+          <h2 class="mb-4">Our Products</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-3 ftco-animate">
+          <div class="block-2">
+            <div class="flipper">
+              <div class="front" style="background-image: url(images/aura-cleanser.webp);">
+                <div class="box">
+                  <h2>Aura Cleanser</h2>
+                  <p>Colour Energy</p>
+                </div>
+              </div>
+              <div class="back">
+                <!-- back content -->
+                  <p>Enhance Your Energy with Colour Energy’s High Frequency Electromagnetic Aura Purifier. This essence was specially created to help neutralize and cleanse areas where it is sprayed, including other people's energy and EMFs.</p>
+                <div class="author d-flex">
+                  <div class="image mr-3 align-self-center">
+                    <div class="img" style="background-image: url(images/aura-cleanser.webp);"></div>
+                  </div>
+                  <div class="name align-self-center">Aura Cleanser <span class="position">Colour Energy</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> <!-- .flip-container -->
+        </div>
+        <div class="col-md-6 col-lg-3 ftco-animate">
+          <div class="block-2">
+            <div class="flipper">
+              <div class="front" style="background-image: url(images/red-spray.webp); ">
+                <div class="box">
+                  <h2>Root Chakra Spray</h2>
+                  <p>Colour Energy</p>
+                </div>
+              </div>
+              <div class="back">
+                <!-- back content -->
+                  <p>The concept behind these high powered Spiritual Sprays are to remind the body's energy field of it's original "colour" blueprint. Restoring balance to imbalances, in turn our body, mind & spirit can return to a harmonic state.</p>
+                <div class="author d-flex">
+                  <div class="image mr-3 align-self-center">
+                    <div class="img" style="background-image: url(images/red-spray.webp); "></div>
+                  </div>
+                  <div class="name align-self-center">Root Chakra Spray <span class="position">Colour Energy</span></div>
+                </div>
+              </div>
+            </div>
+          </div> <!-- .flip-container -->
+        </div>
+        <div class="col-md-6 col-lg-3 ftco-animate">
+          <div class="block-2">
+            <div class="flipper">
+              <div class="front" style="background-image: url(images/detox-roller.webp); ">
+                <div class="box">
+                  <h2>Detox & Digest</h2>
+                  <p>Colour Energy</p>
+                </div>
+              </div>
+              <div class="back">
+                <!-- back content -->
+                  <p>Helps with the expulsion of toxins, fat and cellulite. Relieves stomach cramps, constipation and mild indigestion. Add to a bath with salts for a total detoxifying experience.
+                  </p>
+                <div class="author d-flex">
+                  <div class="image mr-3 align-self-center">
+                    <div class="img" style="background-image: url(images/detox-roller.webp); "></div>
+                  </div>
+                  <div class="name align-self-center">Detox & Digest <span class="position">Colour Energy</span></div>
+                </div>
+              </div>
+            </div>
+          </div> <!-- .flip-container -->
+        </div>
+        <div class="col-md-6 col-lg-3 ftco-animate">
+          <div class="block-2">
+            <div class="flipper">
+              <div class="front" style="background-image: url(images/deoderant.webp); ">
+                <div class="box">
+                  <h2>Crystal Liquid Deoderant</h2>
+                  <p>Colour Energy</p>
+                </div>
+              </div>
+              <div class="back">
+                <!-- back content -->
+                  <p>Ethically made and packaged in Vancouver, Canada, using the finest ingredients from around the world. Never tested on animals, no preservatives, no chemicals, no parabens or fragrances. Suitable for all skin & hair types.</p>
+                <div class="author d-flex">
+                  <div class="image mr-3 align-self-center">
+                    <div class="img" style="background-image: url(images/deoderant.webp); "></div>
+                  </div>
+                  <div class="name align-self-center">Crystal Liquid Deoderant<span class="position">Colour Energy</span></div>
+                </div>
+              </div>
+            </div>
+          </div> <!-- .flip-container -->
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-9 ftco-animate">
+          <h4>We offer the best results</h4>
+          <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
+            paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="ftco-section-parallax">
+    <div class="parallax-img d-flex align-items-center">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+                    <h2>Subscribe to our Newsletter</h2>
+                    <p>Let there be light.</p>
+                    <div class="row d-flex justify-content-center mt-5">
+                        <div class="col-md-8">
+                            <form method="POST" id="zcampaignOptinForm" action="https://zmp-glf.maillist-manage.com/weboptin.zc" target="_zcSignup" onsubmit="zcScptlessSubmit(this)">
+                                <div class="form-group d-flex">
+                                    <input type="text" class="form-control" placeholder="Enter email address" name="CONTACT_EMAIL" id="EMBED_FORM_EMAIL_LABEL">
+                                    <input type="submit" value="Subscribe" class="submit px-3" name="SIGNUP_SUBMIT_BUTTON" id="zcWebOptin">
+                                </div>
+                                <input type="hidden" id="submitType" name="submitType" value="optinCustomView">
+                                <input type="hidden" id="formType" name="formType" value="QuickForm">
+                                <input type="hidden" name="zx" id="cmpZuid" value="1306d2806">
+                                <input type="hidden" name="zcvers" value="3.0">
+                                <input type="hidden" id="mode" name="mode" value="OptinCreateView">
+                                <input type="hidden" id="zcld" name="zcld" value="1fc033bea4dbf4d3">
+                                <input type="hidden" id="zctd" name="zctd" value="1fc033bea4dbf3bf">
+                                <input type="hidden" id="zc_Url" value="zmp-glf.maillist-manage.com">
+                                <input type="hidden" id="new_optin_response_in" value="0">
+                                <input type="hidden" id="duplicate_optin_response_in" value="0">
+                                <input type="hidden" name="zc_trackCode" id="zc_trackCode" value="ZCFORMVIEW">
+                                <input type="hidden" id="zc_formIx" name="zc_formIx" value="3zad33459e35ae015cca032ca1a8fc6e0e4adf8aad3545ac727147981243ef860d">
+                                <input type="hidden" id="scriptless" name="scriptless" value="yes">
+                                <input type="hidden" id="zc_spmSubmit" name="zc_spmSubmit" value="ZCSPMSUBMIT">
+                              </form>
+                              <div id="confirmationMessage" style="display: none; color: white;">
+                                  Thank you for subscribing! Please check your inbox to confirm your subscription.
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+  <script>
+      function zcScptlessSubmit(parentNode){
+          // remove the input and submit the form as before...
+          if(parentNode.querySelector("#zc_spmSubmit")){
+              parentNode.querySelector("#zc_spmSubmit").remove();
+          }
+          parentNode.submit();
+  
+          // hide the form and show the confirmation message
+          parentNode.style.display = "none";
+          document.getElementById("confirmationMessage").style.display = "block";
+          return false;  // prevent form from submitting normally (the submit was already done above)
+      }
+  </script>
+
+
+  <footer class="ftco-footer ftco-bg-dark ftco-section img" style="background-image: url(images/bg_5.jpg);">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">Everlit</h2>
+            <p>Let there be light.</p>
+            <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+              <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4 ml-md-5">
+            <h2 class="ftco-heading-2">Information</h2>
+            <ul class="list-unstyled">
+              <li><a href="#" class="py-2 d-block">Appointments</a></li>
+              <li><a href="#" class="py-2 d-block">Our Specialties</a></li>
+              <li><a href="#" class="py-2 d-block">Why Choose us</a></li>
+              <li><a href="#" class="py-2 d-block">Our Services</a></li>
+              <li><a href="#" class="py-2 d-block">health Tips</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">Site Links</h2>
+            <ul class="list-unstyled">
+              <li><a href="#" class="py-2 d-block">Home</a></li>
+              <li><a href="#" class="py-2 d-block">Glow Up</a></li>
+              <li><a href="#" class="py-2 d-block">Society</a></li>
+              <li><a href="#" class="py-2 d-block">Health</a></li>
+              <li><a href="#" class="py-2 d-block">Shop</a></li>
+              <li><a href="#" class="py-2 d-block">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">Have a Questions?</h2>
+            <div class="block-23 mb-3">
+              <ul>
+                <li><span class="icon icon-map-marker"></span><span class="text">Bridgewater, Nova Scotia, Canada</span></li>
+                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+1 902 223 8069</span></a></li>
+                <li><a href="#"><span class="icon icon-envelope"></span><span
+                      class="text">info@everlit.care</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+        stroke="#F96D00" />
+    </svg></div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modalAppointment" tabindex="-1" role="dialog" aria-labelledby="modalAppointmentLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalAppointmentLabel">Appointment</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="#">
+            <div class="form-group">
+              <label for="appointment_name" class="text-black">Full Name</label>
+              <input type="text" class="form-control" id="appointment_name">
+            </div>
+            <div class="form-group">
+              <label for="appointment_email" class="text-black">Email</label>
+              <input type="text" class="form-control" id="appointment_email">
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="appointment_date" class="text-black">Date</label>
+                  <input type="text" class="form-control" id="appointment_date">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="appointment_time" class="text-black">Time</label>
+                  <input type="text" class="form-control" id="appointment_time">
+                </div>
+              </div>
+            </div>
+
+
+            <div class="form-group">
+              <label for="appointment_message" class="text-black">Message</label>
+              <textarea name="" id="appointment_message" class="form-control" cols="30" rows="10"></textarea>
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Send Message" class="btn btn-primary">
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+
 </body>
-</html>
 
+</html>
