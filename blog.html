@@ -26,37 +26,91 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
-    
+<body>
+<!--NAVBAR -->
+
+
+
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-      <a class="navbar-brand" href="index.html"><i class="flaticon-pharmacy"></i><span>Re</span>Medic</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="index.html"> 
+        <div class="brand-content">
+            <img src="./images/everlit.png" alt="everlit icon" style="height: 60px; width: auto;">
+            <div class="brand-texts">
+                <span class="brand-name">Everlit</span>
+                <span class="brand-tagline">Let there be light...</span>
+            </div>
+        </div>
+    </a>       
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+        aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
       </button>
 
       <div class="collapse navbar-collapse" id="ftco-nav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="departments.html" class="nav-link">Departments</a></li>
-          <li class="nav-item"><a href="doctor.html" class="nav-link">Doctors</a></li>
-          <li class="nav-item active"><a href="blog.html" class="nav-link">Blog</a></li>
-          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-          <li class="nav-item cta"><a href="contact.html" class="nav-link" data-toggle="modal" data-target="#modalAppointment"><span>Make an Appointment</span></a></li>
+        <ul class="navbar-nav ml-auto" style="justify-content: center; margin-right: auto; margin-left: auto;">
+          <li class="nav-item"><a href="index.html" class="nav-link main-menu">Home</a></li>
+		  <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle main-menu" href="catalogue.html" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+            Store
+          </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="catalogue.html">Catalogue</a>
+              <a class="dropdown-item" href="storefront.html">Storefront</a>
+              <a class="dropdown-item" href="local.html">Local</a>
+              <a class="dropdown-item" href="donate.html">Donate</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle main-menu" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+            Glow-Up</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="biopulsar.html">Biopulsar</a>
+              <a class="dropdown-item" href="success.html">Success</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle main-menu" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Society
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="events.html">Events</a>
+              <a class="dropdown-item" href="market.html">Market</a>
+              <a class="dropdown-item" href="newsletter.html">Newsletter</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle main-menu" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Health
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="articles.html">Health Articles</a>
+              <a class="dropdown-item" href="nutrition.html">Nutrition</a>
+              <a class="dropdown-item" href="herbals.html">Herbals</a>
+              <a class="dropdown-item" href="lifestyle.html">Lifestyle</a>
+            </div>
+          </li>
         </ul>
+        <ul class="navbar-nav ml-auto main-menu" style="justify-content: center; margin-right: auto; margin-left: auto;">
+          <li class="nav-item cta"><a href="https://calendly.com/everlit" class="nav-link"><span>Make an Appointment</span></a></li>
+        </ul>
+
       </div>
     </div>
   </nav>
-    <!-- END nav -->
+
+  <!-- END nav -->
     
-    <div class="hero-wrap" style="background-image: url('images/bg_6.jpg'); background-attachment:fixed;">
+    <div class="hero-wrap" style="background-image: url('images/biopulsar-reflexograph.jpg'); background-attachment:fixed;">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
           <div class="col-md-8 ftco-animate text-center">
-            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Blog</span></p>
-            <h1 class="mb-3 bread">Blog</h1>
+            <h1 class="mb-3 bread">Events</h1>
           </div>
         </div>
       </div>
@@ -66,113 +120,40 @@
       <div class="container">
         <div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section ftco-animate text-center">
-            <h2 class="mb-4">Recent from blog</h2>
+            <h2 class="mb-4">Upcoming Events</h2>
           </div>
         </div>
         <div class="row d-flex">
           <div class="col-md-6 ftco-animate">
             <div class="blog-entry align-self-stretch d-flex">
-              <a href="blog-single.html" class="block-20 order-md-last" style="background-image: url('images/image_1.jpg');">
+              <a href="blog-single.html" class="block-20 order-md-last" style="background-image: url('images/autumnroot.jpg');">
               </a>
               <div class="text p-4 d-block">
               	<div class="meta mb-3">
-                  <div><a href="#">August 12, 2018</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+                  <div><a href="#">September 28th, 2023 | 7-9 pm</a></div>
                 </div>
-                <h3 class="heading mt-3"><a href="#">New technology facilities</a></h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                <h3 class="heading mt-3"><a href="https://www.blockhouseyoga.com/monthly-updates-events/">Autumn Root Boost Featuring Tracy</a></h3>
+                <p>
+Are you having difficulty getting up in the morning?<br>
+Are your hands and feet always cold?<br>
+Want to boost your immune system for the fall?<br>
+Join guest speaker Tracy and I for an evening of yoga, supportive tea infusion, frequency and Chakras as we prepare for the fall season together.<br><br>
+<b>Register: tracy.balancetobliss@gmail.com</b></p>
               </div>
             </div>
           </div>
           <div class="col-md-6 ftco-animate">
             <div class="blog-entry align-self-stretch d-flex">
-              <a href="blog-single.html" class="block-20 order-md-last" style="background-image: url('images/image_2.jpg');">
+              <a href="blog-single.html" class="block-20 order-md-last" style="background-image: url('images/spiritualfair.jpg');">
               </a>
               <div class="text p-4 d-block">
               	<div class="meta mb-3">
-                  <div><a href="#">August 12, 2018</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+                  <div><a href="#">September 23rd, 2023 |&nbsp; 10am-3pm </a></div>
                 </div>
-                <h3 class="heading mt-3"><a href="#">New technology facilities</a></h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                <h3 class="heading mt-3"><a href="#">Spiritual Fair Bridgewater&nbsp;</a></h3>
+                <p>Come join me and a myriad of alternative medicine practitioners, Intuitives, tea vendors, crystal suppliers, and more at the Bridgewater Legion.</p>
+                <p>Hosted by Corrine&nbsp; &nbsp;</p>
               </div>
-            </div>
-          </div>
-          <div class="col-md-6 ftco-animate">
-            <div class="blog-entry align-self-stretch d-flex">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
-              </a>
-              <div class="text p-4 d-block">
-              	<div class="meta mb-3">
-                  <div><a href="#">August 12, 2018</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                </div>
-                <h3 class="heading mt-3"><a href="#">New technology facilities</a></h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 ftco-animate">
-            <div class="blog-entry align-self-stretch d-flex">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_4.jpg');">
-              </a>
-              <div class="text p-4 d-block">
-              	<div class="meta mb-3">
-                  <div><a href="#">August 12, 2018</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                </div>
-                <h3 class="heading mt-3"><a href="#">New technology facilities</a></h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 ftco-animate">
-            <div class="blog-entry align-self-stretch d-flex">
-              <a href="blog-single.html" class="block-20 order-md-last" style="background-image: url('images/image_5.jpg');">
-              </a>
-              <div class="text p-4 d-block">
-              	<div class="meta mb-3">
-                  <div><a href="#">August 12, 2018</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                </div>
-                <h3 class="heading mt-3"><a href="#">New technology facilities</a></h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 ftco-animate">
-            <div class="blog-entry align-self-stretch d-flex">
-              <a href="blog-single.html" class="block-20 order-md-last" style="background-image: url('images/image_6.jpg');">
-              </a>
-              <div class="text p-4 d-block">
-              	<div class="meta mb-3">
-                  <div><a href="#">August 12, 2018</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                </div>
-                <h3 class="heading mt-3"><a href="#">New technology facilities</a></h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row mt-5">
-          <div class="col text-center">
-            <div class="block-27">
-              <ul>
-                <li><a href="#">&lt;</a></li>
-                <li class="active"><span>1</span></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#">&gt;</a></li>
-              </ul>
             </div>
           </div>
         </div>
@@ -203,68 +184,47 @@
     </section>
 
     <footer class="ftco-footer ftco-bg-dark ftco-section img" style="background-image: url(images/bg_5.jpg);">
-    	<div class="overlay"></div>
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Everlit</h2>
-              <p>Let there be light.</p>
-              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4 ml-md-5">
-              <h2 class="ftco-heading-2">Information</h2>
-              <ul class="list-unstyled">
-              	<li><a href="#" class="py-2 d-block">Appointments</a></li>
-                <li><a href="#" class="py-2 d-block">Our Specialties</a></li>
-                <li><a href="#" class="py-2 d-block">Why Choose us</a></li>
-                <li><a href="#" class="py-2 d-block">Our Services</a></li>
-                <li><a href="#" class="py-2 d-block">health Tips</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Site Links</h2>
-              <ul class="list-unstyled">
-                <li><a href="#" class="py-2 d-block">Home</a></li>
-                <li><a href="#" class="py-2 d-block">About</a></li>
-                <li><a href="#" class="py-2 d-block">Departments</a></li>
-                <li><a href="#" class="py-2 d-block">Doctors</a></li>
-                <li><a href="#" class="py-2 d-block">Blog</a></li>
-                <li><a href="#" class="py-2 d-block">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-            	<h2 class="ftco-heading-2">Have a Questions?</h2>
-            	<div class="block-23 mb-3">
-	              <ul>
-	                <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
-	              </ul>
-	            </div>
-            </div>
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">Everlit</h2>
+            <p>Let there be light.</p>
+            <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+              <li class="ftco-animate"><a href="https://instagram.com/everlitauracare"><span class="icon-instagram"></span></a></li>
+            </ul>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-12 text-center">
-
-            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4 ml-md-5">
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">Have a Questions?</h2>
+            <div class="block-23 mb-3">
+              <ul>
+                <li><span class="icon icon-map-marker"></span><span class="text">Bridgewater, Nova Scotia, Canada</span></li>
+                <li><a href="mailto:info@everlit.care"><span class="icon icon-envelope"></span><span
+                      class="text">info@everlit.care</span></a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </footer>
+      <div class="row">
+        <div class="col-md-12 text-center">
+
+
+        </div>
+      </div>
+    </div>
+  </footer>
     
   
 
@@ -339,6 +299,6 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
-    
+
   </body>
 </html>
